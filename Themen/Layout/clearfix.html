@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clearfix</title>
+    <style>
+        div {
+            border: 3px solid darkslategray;
+            padding: 5px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        img {
+            float:right;
+            width:200px;
+            margin-left:15px;
+        }
+    </style>
+</head>
+<body>
+<div class="clearfix">
+<img src="../img/fiw.jpg" alt="fiw-logo" />
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+    nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+    congue eget, auctor vitae massa. </p>
+</div>
+</body>
+</html>

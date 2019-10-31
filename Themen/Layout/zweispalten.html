@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-Spalten</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family:Verdana, sans-serif;
+        }
+        header,footer {
+            background-color:lightgray;
+        }
+        header h1 {
+             font-variant:small-caps;
+             margin-top : 0px;
+        }
+        header h6 {
+            color: #787878;
+            margin-bottom : 0px;
+        }
+        header img {
+            width:50px;
+            float:left;
+            margin-right:10px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .column {
+            float: left;
+            padding: 15px;
+        }
+        .menu {
+            width: 25%;
+        }
+        .content {
+            width: 75%;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #b1d471;
+            color: black;
+        }
+        .menu li:hover {
+            background-color: #76B900;
+            color:white;
+        }
+        article {
+            font-size:0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header class="clearfix">
+        <img src="../img/fiw.jpg" alt="fiw-logo" />
+        <h6>Frauenstudiengang - Bachelor</h6>
+        <h1>Informatik und Wirtschaft</h1>
+</header>
+
+<section class="clearfix">
+    <aside class="column menu">
+        <ul>
+            <li>Studium</li>
+            <li>Bewerbung</li>
+            <li>Personen</li>
+            <li>News</li>
+        </ul>
+    </aside>
+
+    <article class="column content">
+        <h1>Mit Spaß bei der Sache</h1>
+        <p>Begeisterung ist die zentrale Anforderung im Studium: Begeisterung für das Tüfteln,
+            für logisches Denken und Teamarbeit. In Gruppenarbeiten und praxisnahen Studienprojekten
+            macht das Lernen Spaß und die anspruchsvollen Inhalte prägen sich leichter ein.</p>
+    </article>
+</section>
+
+<footer>
+    <p>Footer Text</p>
+</footer>
+
+</body>
+</html>

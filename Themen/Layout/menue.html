@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menü-Beispiel</title>
+    <style>
+        * {
+            --htw-gruen: #76B900;
+            --htw-grau:#AFAFAF;
+            --htw-orange:#FF5F00;
+            --htw-blau:#0082D1;
+            --htw-font:Verdana, Geneva, sans-serif;
+        }
+        body {
+            font-family:var(--htw-font);
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--htw-grau);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: var(--htw-orange);
+        }
+
+        .active {
+            background-color: var(--htw-gruen);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#A" class="active">Alle</a></li>
+    <li><a href="#A">A-G</a></li>
+    <li><a href="#H">H-L</a></li>
+    <li><a href="#M">M-R</a></li>
+    <li><a href="#M">S-Z</a></li>
+</ul>
+</body>
+</html>

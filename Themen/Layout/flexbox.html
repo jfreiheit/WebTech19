@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        .flex-container {
+            display: flex;
+            height:200px;
+            background-color: #AFAFAF;
+            /*flex-direction:row;*/
+            /*flex-wrap:wrap;*/
+            /*justify-content:space-around;
+            align-items:stretch;
+            align-content:stretch; */
+        }
+
+        .flex-container > div {
+            background-color: #76B900;
+            margin: 10px;
+            padding:20px;
+            color:white;
+        }
+        .flex-container>div {
+
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div style="flex-shrink:1;">Box 1</div>
+    <div style="flex-shrink:0;">Box 2</div>
+    <div style="flex-shrink:2;">Box 3</div>
+    <div style="flex-shrink:2;">Box 4</div>
+    <div style="flex-shrink:3;">Box 5</div>
+    <!--
+    <div style="flex-shrink:0;">Box 6</div>
+    <div>Box 7</div>
+    <div>Box 8</div>
+    <div>Box 9</div>
+    <div>Box 10</div>
+    -->
+</div>
+</body>
+</html>

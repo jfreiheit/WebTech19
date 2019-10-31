@@ -1,0 +1,3 @@
+# alle Bootstrap-Dateien ignorieren, d.h. den gesamten css-Ordner
+css/*
+

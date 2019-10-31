@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        div {
+            width: 200px;
+            height: 50px;
+            background-color: lightgray;
+            border: 1px dotted black;
+        }
+        .contentvisible {
+            overflow: visible;
+        }
+        .contenthidden {
+            overflow: hidden;
+        }
+        .contentscroll {
+            overflow: scroll;
+        }
+        .contentauto {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<h3>overflow:visible</h3>
+<p>Inhalt wird immer dargestellt, auch wenn er nicht in das Element passt. (Standard) </p>
+<div class="contentvisible">
+    The overflow property specifies whether content of a block container element is
+    clipped when it overflows the element's box. see
+    <a href="https://www.w3.org/wiki/CSS/Properties/overflow">W3C CSS Spezifikation für overflow</a>
+</div>
+
+<h3 style="margin-top:90px;">overflow:hidden</h3>
+<p>Inhalt wird nicht dargestellt, wenn er nicht in das Element passt. </p>
+<div class="contenthidden">
+    The overflow property specifies whether content of a block container element is
+    clipped when it overflows the element's box. see
+    <a href="https://www.w3.org/wiki/CSS/Properties/overflow">W3C CSS Spezifikation für overflow</a>
+</div>
+
+<h3>overflow:scroll</h3>
+<p>Inhalt wird nicht dargestellt, wenn er nicht in das Element passt, aber es erscheint ein Scrollbar,
+    mit dem man den nicht sichtbaren Inhalt sichtbar macht. (nicht bei Mac!) Scrollbar erscheint selbst
+    dann, wenn der Inhalt hinenpasst. Beim Mac kein Unterschied zwischen scroll aund auto.</p>
+<div class="contentscroll">
+    The overflow property specifies whether content of a block container element is
+    clipped when it overflows the element's box. see
+    <a href="https://www.w3.org/wiki/CSS/Properties/overflow">W3C CSS Spezifikation für overflow</a>
+</div>
+
+<h3>overflow:auto</h3>
+<p>Inhalt wird nicht dargestellt, wenn er nicht in das Element passt, aber es erscheint (automatisch) ein Scrollbar,
+    mit dem man den nicht sichtbaren Inhalt sichtbar macht. Sollte der Inhalt passen, erscheint der Scrollbar nicht.
+    Beim Mac kein Unterschied zwischen scroll aund auto.</p>
+<div class="contentauto">
+    The overflow property specifies whether content of a block container element is
+    clipped when it overflows the element's box. see
+    <a href="https://www.w3.org/wiki/CSS/Properties/overflow">W3C CSS Spezifikation für overflow</a>
+</div>
+</body>
+</html>

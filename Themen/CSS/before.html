@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beispiel ::before</title>
+    <style>
+
+        .container {
+            counter-reset: section;
+            background:#4CAF50;
+            padding: 10px;
+            font: 400 12px/1.8 "Lato", sans-serif;
+            color: white;
+        }
+
+        .container h3::before {
+            counter-increment: section;
+            content: counter(section);
+            display:inline-block;
+            color:white;
+            background: #555;
+            border: 5px solid #555;
+            padding:1px 15px;
+            margin-right:16px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="max-width:300px">
+    <h3>Klassen</h3>
+    <h3>Pseudo-Klassen</h3>
+    <h3>Pseudo-Elemente</h3>
+</div>
+</body>
+</html>

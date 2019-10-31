@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max-width</title>
+    <style>
+        div {
+            margin: auto;
+            padding: 5px;
+            border: 3px solid #ad0a28;
+        }
+        div:first-of-type {
+            width:800px;
+        }
+
+        div:last-of-type {
+            max-width:800px;
+        }
+    </style>
+</head>
+<body>
+<h3>Unterschied width und max-width</h3>
+<div>
+    Element mit <strong>width:800px</strong>. Um den Unterschied zwischen den beiden divs zu sehen, muss der Browser schmaler gestellt werden.
+</div>
+<br/>
+<div>
+    Element mit <strong>max-width:800px</strong>. Um den Unterschied zwischen den beiden divs zu sehen, muss der Browser schmaler gestellt werden.
+</div>
+</body>
+</html>
